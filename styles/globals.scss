@@ -17,7 +17,10 @@ html {
   box-sizing: border-box;
   font-size: 18px;
   line-height: 1.4;
-  background-color: $bg-primary;
+  background-color: $bg-secondary;
+  @media screen and (min-width: 1000px) {
+    background-color: $bg-primary;
+  }
   color: $text-primary;
   padding: 0px;
   margin: 0px;
@@ -53,15 +56,18 @@ a {
 
 main {
   max-width: 100%;
-  padding: 20px;
+  padding: 30px 20px 20px 20px;
   background: $bg-secondary;
   font-size: 16px;
+  border-top: 5px solid #ecf0f6;
+  border-bottom: 5px solid #ecf0f6;
   @media screen and (min-width: 1000px) {
     max-width: 760px;
-    background: #fcfcfc;
+    background: $bg-secondary;
     padding: 40px 50px;
     margin: 30px auto;
     font-size: inherit;
+    border: none;
   }
   .markdown-body {
     letter-spacing: 0.1px !important;
@@ -93,7 +99,7 @@ main {
     padding: 0px 13px;
     border-radius: 5px;
     background: #ecf0f6;
-    margin-bottom: $secondary-margin-bottom;
+    margin-bottom: $primary-margin-bottom;
     b {
       font-weight: 700;
     }
@@ -249,6 +255,10 @@ section {
   padding: 5px 12px;
   left: calc((100% - 925px) / 2);
   transform: translateY(52px);
+  display: none;
+  @media screen and (min-width:1000px) {
+    display: inherit;
+  }
 }
 
 .label {
@@ -261,8 +271,10 @@ footer {
   padding: 40px 0px;
   margin-top: -30px;
   width: 100%;
+  font-size: 13px;
   @media screen and (min-width: 1000px) {
     width: 660px;
+    font-size: inherit;
   }
   margin: -30px auto 0px auto;
   text-align: center;

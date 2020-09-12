@@ -10,8 +10,8 @@ const Top = () => {
       <p>
         Welcome to my development diary. I will be posting <b>✌️ Tips</b>, <b>💡 Thoughts</b>,{" "}
         <b>📃&nbsp; Notes</b> and <b>🖥&nbsp;&nbsp;Works</b> here from time to time. Views are my own.
-        Send me an email at tony.hlp@hotmail.com if you have any question or
-        suggestion. Thank you for visiting and enjoy.
+        Send me an email at tony.hlp#hotmail.com if you have any question or
+        suggestion. Thank you for your visiting and enjoy.
       </p>
     </section>
   );

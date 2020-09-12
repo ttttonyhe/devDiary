@@ -1,7 +1,7 @@
 import useSWR from "swr";
 import axios from "axios";
 import Link from "next/link";
-import ContentLoader from "react-content-loader"
+import ContentLoader from "react-content-loader";
 
 interface Props {
   exclude?: string;
@@ -45,17 +45,23 @@ const LabelsList = ({ exclude }: Props) => {
   return (
     <div>
       <ul>
-        {data.map((item) => {
-          if (excludeNameArray.indexOf(item.name) === -1) {
-            return (
-              <Link href={"/label/" + item.name} key={item.id}>
-                <li style={{ borderColor: "#" + item.color }}>
-                  <span>{item.name}</span>
-                </li>
-              </Link>
-            );
-          }
-        })}
+        {data.length ? (
+          data.map((item) => {
+            if (excludeNameArray.indexOf(item.name) === -1) {
+              return (
+                <Link href={"/label/" + item.name} key={item.id}>
+                  <li style={{ borderColor: "#" + item.color }}>
+                    <span>{item.name}</span>
+                  </li>
+                </Link>
+              );
+            }
+          })
+        ) : (
+          <li>
+            <span>Nothing</span>
+          </li>
+        )}
       </ul>
     </div>
   );

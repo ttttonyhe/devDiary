@@ -63,7 +63,7 @@ const IssuesList = ({ label }: Props) => {
     return (
       <div className="issues">
         <ul>
-          <li><i className="ri-close-circle-line"></i> Nothing is here</li>
+          <li><i className="ri-checkbox-blank-circle-line"></i> Nothing is here</li>
         </ul>
       </div>
     );
