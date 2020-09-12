@@ -53,13 +53,15 @@ a {
 
 main {
   max-width: 100%;
-  padding-top: 20px;
-  margin: 30px auto;
+  padding: 20px;
   background: $bg-secondary;
+  font-size: 16px;
   @media screen and (min-width: 1000px) {
     max-width: 760px;
     background: #fcfcfc;
     padding: 40px 50px;
+    margin: 30px auto;
+    font-size: inherit;
   }
   .markdown-body {
     letter-spacing: 0.1px !important;
@@ -74,10 +76,18 @@ main {
 }
 
 .section-top {
+  div {
+    display: flex;
+  }
   b {
     font-weight: 600;
   }
   h1 {
+    &:nth-child(1) {
+      margin-right: 7px;
+      font-size: 1.2em;
+      padding: 3px 10px 0px 9px;
+    }
     display: inline-block;
     color: #697384;
     padding: 0px 13px;
@@ -96,6 +106,7 @@ main {
     font-weight: 700;
     letter-spacing: 0.5px;
     margin-top: $primary-margin-bottom;
+    font-size: 1.7em;
   }
   h2 {
     font-weight: 700;
@@ -142,6 +153,20 @@ section {
       position: relative;
       border-left: 5px solid #eee;
       box-shadow: 0px 1px 3px 0px rgba(0, 0, 0, 0.14);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-size: 15px;
+      @media screen and (min-width: 1000px) {
+        white-space: inherit;
+        overflow: inherit;
+        text-overflow: inherit;
+        font-size: inherit;
+      }
+      transition: ease-in-out 0.1s;
+      &:hover {
+        box-shadow: 0px 2px 6px 0px rgba(0, 0, 0, 0.14);
+      }
     }
   }
 }
@@ -235,7 +260,10 @@ section {
 footer {
   padding: 40px 0px;
   margin-top: -30px;
-  width: 660px;
+  width: 100%;
+  @media screen and (min-width: 1000px) {
+    width: 660px;
+  }
   margin: -30px auto 0px auto;
   text-align: center;
   b {
