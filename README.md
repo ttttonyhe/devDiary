@@ -1,10 +1,10 @@
-# devDiary
-Tony's Development Diary
+# DEV Diary
+🚀 Personal Development Diary.
 
 <br/>
 
-## Data Fetching
-+ Issues list (with filters)
-+ Issues labels
-+ Search Issues
-+ Get an Issue
+The code powers [dev.ouorz.com](https://dev.ouorz.com).
+
+<br/>
+
+Diary contents are stored as [Github Issues](https://github.com/helipengtony/devDiary/issues), fetching using [Github REST API](https://docs.github.com/en/rest)
