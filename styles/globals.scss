@@ -59,6 +59,7 @@ main {
   padding: 30px 20px 20px 20px;
   background: $bg-secondary;
   font-size: 16px;
+  border-radius: 2px;
   border-top: 5px solid #ecf0f6;
   border-bottom: 5px solid #ecf0f6;
   @media screen and (min-width: 1000px) {
@@ -276,7 +277,7 @@ footer {
   padding: 40px 0px;
   margin-top: -30px;
   width: 100%;
-  font-size: 13px;
+  font-size: 16px !important;
   @media screen and (min-width: 1000px) {
     width: 660px;
     font-size: inherit;
@@ -294,5 +295,42 @@ footer {
     font-weight: 700;
     line-height: 1.2;
     color: #333;
+  }
+}
+
+#MathJax_Message {
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14) !important;
+  border-radius: 5px !important;
+  padding: 5px 15px !important;
+  color: #5e6687 !important;
+  border: none !important;
+}
+
+.post-info {
+  display: flex;
+  margin-top: 50px;
+  font-size: 15px;
+  color: #5e6687b8;
+  border-radius: 5px;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.14);
+  padding: 10px 20px;
+  letter-spacing: -0.1px;
+  white-space: nowrap;
+  div {
+    &:nth-child(1) {
+      padding: 3px 10px 3px 0px;
+      flex: 8;
+    }
+    &:nth-child(2) {
+      &:hover {
+        background: #eee;
+      }
+      cursor: pointer;
+      transition: ease-in-out 0.1s;
+      border-radius: 5px;
+      background: #f1f2f3;
+      padding: 3px 10px;
+      flex: 1;
+    }
   }
 }
