@@ -24,7 +24,7 @@ export default function Post() {
     return (
       <div>
         <main>
-        <ContentLoader
+          <ContentLoader
             speed={2}
             width={100}
             style={{ width: "100%" }}
@@ -35,7 +35,7 @@ export default function Post() {
             <rect x="0" y="0" rx="3" ry="3" width="100%" height="30" />
             <rect x="0" y="40" rx="3" ry="3" width="80%" height="20" />
 
-            <rect x="0"   y="70" rx="3" ry="3" width="9%" height="20" />
+            <rect x="0" y="70" rx="3" ry="3" width="9%" height="20" />
             <rect x="10%" y="70" rx="3" ry="3" width="9%" height="20" />
             <rect x="20%" y="70" rx="3" ry="3" width="9%" height="20" />
             <rect x="30%" y="70" rx="3" ry="3" width="9%" height="20" />
@@ -90,6 +90,14 @@ export default function Post() {
         </section>
         <div className="markdown-body">
           <Markdown source={data.body} />
+        </div>
+        <div className="post-info">
+          <div>
+            Created at {data.created_at.replace("T", " ").replace("Z", " ")}
+          </div>
+          <div>
+            <a target="_blank" href={data.html_url}>Github →</a>
+          </div>
         </div>
       </main>
 
