@@ -3,7 +3,7 @@ import axios from "axios";
 export default async (req, res) => {
   await axios({
     method: "GET",
-    url: "https://v2.kkpp.cc/repos/helipengtony/devDiary/labels",
+    url: "https://api.github.com/repos/helipengtony/devDiary/labels",
     headers: {
       Authorization: "token " + "ab543ae954598c0c4a30" + "aff1381d562faaa9c739",
     },

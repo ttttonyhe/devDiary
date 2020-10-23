@@ -8,7 +8,7 @@ export default async (req, res) => {
     await axios({
       method: "GET",
       url:
-        "https://v2.kkpp.cc/repos/helipengtony/devDiary/issues?labels=" + label,
+        "https://api.github.com/repos/helipengtony/devDiary/issues?labels=" + label,
       headers: {
         Authorization:
           "token " + "ab543ae954598c0c4a30" + "aff1381d562faaa9c739",

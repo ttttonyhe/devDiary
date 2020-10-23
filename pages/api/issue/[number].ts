@@ -7,7 +7,7 @@ export default async (req, res) => {
   if (number !== "undefined") {
     await axios({
       method: "GET",
-      url: "https://v2.kkpp.cc/repos/helipengtony/devDiary/issues/" + number,
+      url: "https://api.github.com/repos/helipengtony/devDiary/issues/" + number,
       headers: {
         Authorization:
           "token " + "ab543ae954598c0c4a30" + "aff1381d562faaa9c739",
