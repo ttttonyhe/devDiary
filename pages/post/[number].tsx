@@ -96,7 +96,9 @@ export default function Post() {
             Created at {data.created_at.replace("T", " ").replace("Z", " ")}
           </div>
           <div>
-            <a target="_blank" href={data.html_url}>Github →</a>
+            <a target="_blank" href={data.html_url}>
+              Github →
+            </a>
           </div>
         </div>
       </main>

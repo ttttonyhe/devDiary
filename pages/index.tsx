@@ -13,7 +13,10 @@ export default function Home() {
           rel="icon"
           href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🚀</text></svg>"
         ></link>
-        <meta name="keywords" content="笔记,diary,dev diary, 学习笔记, ouorz, tonyhe" />
+        <meta
+          name="keywords"
+          content="笔记,diary,dev diary, 学习笔记, ouorz, tonyhe"
+        />
       </Head>
 
       <main>
