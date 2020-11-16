@@ -1,9 +1,5 @@
 # DEV Diary
-🚀 Personal Development Diary.
-
-<br/>
-
-The code powers [dev.ouorz.com](https://dev.ouorz.com).
+🚀 Personal Development Diary (aka. notes site) | [dev.ouorz.com](https://dev.ouorz.com)
 
 <br/>
 
