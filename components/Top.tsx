@@ -7,15 +7,11 @@ const Top = () => {
           <b>DEV</b> Diary
         </h1>
       </div>
-      <p>Welcome to my development diary. </p>
       <p>
-        I will be posting <b>✌️ Tips</b>, <b>💡 Thoughts</b>,{" "}
-        <b>📃&nbsp; Notes</b> and <b>🖥&nbsp;&nbsp;Works</b> here from time to
-        time.
-      </p>
-      <p>
-        You can navigate between subjects and categories by clicking on the
-        following labels.
+        Welcome to my development diary. I will be posting <b>✌️ Tips</b>,{" "}
+        <b>💡 Thoughts</b>, <b>📃&nbsp; Notes</b> and <b>🖥&nbsp;&nbsp;Works</b>{" "}
+        here from time to time. You can navigate between subjects and categories
+        by clicking on the following labels.
       </p>
     </section>
   );

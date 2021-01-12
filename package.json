@@ -9,25 +9,25 @@
   },
   "dependencies": {
     "@types/react-mathjax": "^1.0.0",
-    "@types/react-syntax-highlighter": "^11.0.5",
-    "axios": "^0.20.0",
+    "@types/react-syntax-highlighter": "^13.5.0",
+    "axios": "^0.21.1",
     "github-markdown-css": "^4.0.0",
     "next": "^10.0.1",
     "react": "^17.0.1",
     "react-content-loader": "^5.1.1",
     "react-dom": "^17.0.1",
-    "react-markdown": "^4.3.1",
+    "react-markdown": "^5.0.3",
     "react-mathjax": "^1.0.1",
     "react-showdown": "^2.1.0",
-    "react-syntax-highlighter": "^13.5.3",
-    "remark-math": "^3.0.1",
+    "react-syntax-highlighter": "^15.4.3",
+    "remark-math": "^4.0.0",
     "remixicon": "^2.5.0",
     "sass": "^1.26.10",
-    "swr": "^0.3.2"
+    "swr": "^0.4.0"
   },
   "devDependencies": {
     "@types/node": "^14.10.0",
-    "@types/react": "^16.9.49",
+    "@types/react": "^17.0.0",
     "typescript": "^4.0.2"
   }
 }
