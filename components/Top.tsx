@@ -7,11 +7,15 @@ const Top = () => {
           <b>DEV</b> Diary
         </h1>
       </div>
+      <p>Welcome to my development diary. </p>
       <p>
-        Welcome to my development diary. I will be posting <b>✌️ Tips</b>, <b>💡 Thoughts</b>,{" "}
-        <b>📃&nbsp; Notes</b> and <b>🖥&nbsp;&nbsp;Works</b> here from time to time. Views are my own.
-        Send me an email at tony.hlp#hotmail.com if you have any questions or
-        suggestions. Thank you for your visiting and enjoy.
+        I will be posting <b>✌️ Tips</b>, <b>💡 Thoughts</b>,{" "}
+        <b>📃&nbsp; Notes</b> and <b>🖥&nbsp;&nbsp;Works</b> here from time to
+        time.
+      </p>
+      <p>
+        You can navigate between subjects and categories by clicking on the
+        following labels.
       </p>
     </section>
   );

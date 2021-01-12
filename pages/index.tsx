@@ -22,23 +22,7 @@ export default function Home() {
       <main>
         <Top />
         <section className="section-two labels">
-          <h1>Labels</h1>
-          <p>All posts labels</p>
           <LabelsList exclude="UWaterloo,Course" />
-        </section>
-        <section className="section-two">
-          <h1>Notes</h1>
-          <p>Notes from lectures, teachers and other sources</p>
-          <h2>💻 CS 135</h2>
-          <IssuesList label="CS 135" />
-          <h2>🌋 MATH 137</h2>
-          <IssuesList label="Math 137" />
-          <h2>🏔️ MATH 135</h2>
-          <IssuesList label="Math 135" />
-          <h2>📊 ECON 101</h2>
-          <IssuesList label="Econ 101" />
-          <h2>📚 EMLS 129R</h2>
-          <IssuesList label="EMLS 129R" />
         </section>
       </main>
 
